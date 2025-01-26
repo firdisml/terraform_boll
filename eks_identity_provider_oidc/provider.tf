@@ -9,10 +9,10 @@ terraform {
 
   backend "s3" {
     bucket = "daus-terraform"
-    key    = "dev/eks/terraform.tfstate"
+    key    = "dev/identity-provider-oidc/terraform.tfstate"
     region = "us-east-1"
 
-    dynamodb_table = "daus-terraform-eks"
+    dynamodb_table = "identity-provider-oidc"
   }
 }
 

@@ -1,19 +1,13 @@
 variable "eks_region" {
-  description = "EKS cluster region"
+  description = "TFState file bucket region"
   type        = string
   default     = "us-east-1"
 }
 
-variable "eks_cluster_name" {
-  description = "EKS cluster name"
+variable "eks_oidc_thumbprint" {
+  description = "EKS OIDC Thumbprint"
   type        = string
-  default     = "daus-eks"
-}
-
-variable "eks_k8s_version" {
-  description = "The version of k8s deployed in EKS"
-  type        = string
-  default     = "1.31"
+  default     = "9e99a48a9960b14926bb7f3b02e22da2b0ab7280"
 }
 
 variable "eks_generic_tag" {

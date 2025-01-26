@@ -7,7 +7,7 @@ variable "vpc_aws_region" {
 variable "vpc_name" {
   description = "The name of vpc"
   type        = string
-  default     = "daus-k8s-vpc"
+  default     = "daus-general-vpc"
 }
 
 variable "vpc_cidr" {
@@ -27,7 +27,7 @@ variable "vpc_public_subnet_tags" {
   type        = map(string)
   default = {
     "Type"     = "public-subnet"
-    "VPC Name" = "daus-k8s-vpc"
+    "VPC Name" = "daus-general-vpc"
   }
 }
 
@@ -35,7 +35,7 @@ variable "vpc_tags" {
   description = "VPC tags"
   type        = map(string)
   default = {
-    "VPC Name" = "daus-k8s-vpc"
+    "VPC Name" = "daus-general-vpc"
   }
 }
 
